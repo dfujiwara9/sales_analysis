@@ -17,25 +17,33 @@
 
 ## セットアップ
 1. リポジトリをクローン
+   ```
    git clone https://github.com/yourusername/sales_analysis.git
    cd sales_analysis
+   ```
 
-2. 仮想環境の作成と有効化
+3. 仮想環境の作成と有効化
+   ```
    python -m venv venv
    source venv/bin/activate  # macOS/Linux
    venv\Scripts\activate     # Windows
+   ```
 
-3. 必要なパッケージのインストール
+5. 必要なパッケージのインストール
+   ```
    pip install -r requirements.txt
+   ```
 
-4. データの配置
-   data/sales_data.csv に売上データを配置します。
+7. データの配置
+   `data/sales_data.csv` に売上データを配置します。
 
 ## 実行方法
 以下のコマンドで一連の分析プロセスを実行します。
 
+   ```
    python run_analysis.py
+   ```
 
 ## 結果
-reports/monthly_sales_report.pdf に生成されたレポートが保存されます。
+`reports/monthly_sales_report.pdf` に生成されたレポートが保存されます。
 images/ フォルダに各種グラフが保存されます。
